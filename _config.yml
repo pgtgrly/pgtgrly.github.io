@@ -7,7 +7,7 @@ description: "Ai enthusiast who survives on a healthy diet of Research papers"
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  links: '#39ff14'
 
 # Footer settings
 footer: Pranav Garg
@@ -20,6 +20,8 @@ social:
     url: https://in.linkedin.com/in/pranavgarg1997
   - title: github
     url: https://github.com/pgtgrly
+  - title: website
+    url: https://thesilentmonksretreat.wordpress.com
 # Build settings
 markdown: kramdown
 permalink: pretty
