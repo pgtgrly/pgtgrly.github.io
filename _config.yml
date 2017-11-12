@@ -25,3 +25,4 @@ markdown: kramdown
 permalink: pretty
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
