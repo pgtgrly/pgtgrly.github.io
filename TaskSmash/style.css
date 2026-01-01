@@ -1,0 +1,178 @@
+/* Neobrutalist Design System for TaskSmash */
+
+:root {
+    --color-bg: #FFFFFF;
+    --color-text: #000000;
+    --color-accent: #FF00FF; /* Neon Pink */
+    --color-accent-2: #00FFFF; /* Cyan */
+    --color-accent-3: #CCFF00; /* Lime */
+    --color-border: #000000;
+    --shadow-hard: 4px 4px 0px 0px #000000;
+    --border-width: 3px;
+    --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.8rem; }
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 65ch;
+}
+
+/* Layout */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+/* Components */
+
+.brutal-card {
+    background: white;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-hard);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.brutal-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px var(--color-border);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-text);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-hard);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: var(--color-accent);
+    color: black;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px var(--color-border);
+}
+
+.btn-secondary {
+    background: white;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background: var(--color-accent-2);
+}
+
+/* Hero */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: var(--border-width) solid var(--color-border);
+    background-image: radial-gradient(var(--color-border) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.hero-content {
+    background: white;
+    padding: 3rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 8px 8px 0px 0px var(--color-border);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--color-accent-3);
+    color: black;
+    padding: 0.2rem 0.8rem;
+    font-weight: bold;
+    font-family: var(--font-mono);
+    border: 2px solid black;
+    margin-bottom: 1rem;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Footer */
+
+footer {
+    border-top: var(--border-width) solid var(--color-border);
+    padding: 4rem 0;
+    text-align: center;
+    background: var(--color-accent-2);
+}
+
+.footer-links a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 1rem;
+    border-bottom: 2px solid transparent;
+}
+
+.footer-links a:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Utilities */
+
+.text-accent { color: var(--color-accent); }
+.bg-light { background-color: #f0f0f0; }
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .hero-content { padding: 1.5rem; }
+}
