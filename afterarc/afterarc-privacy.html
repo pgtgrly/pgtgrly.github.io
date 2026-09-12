@@ -27,29 +27,29 @@
       <table class="data-table">
         <thead><tr><th>Data</th><th>Why</th><th>Where</th></tr></thead>
         <tbody>
-          <tr><td data-label="Data">Settings, saved progress, discoveries, recent runs, scores, replay seeds, and a resumable checkpoint</td><td data-label="Why">To remember preferences, restore play, show records, and unlock content</td><td data-label="Where">Locally in the app on your device</td></tr>
-          <tr><td data-label="Data">Gameplay events such as run and wave boundaries, score, duration, builds, routes, damage totals, Blast use, pickups, service outcomes, whether a continue was used, and optional per-impression ad-revenue values by format and placement</td><td data-label="Why">To balance the game, understand play, improve reliability, and measure aggregate ad performance</td><td data-label="Where">Google Analytics for Firebase only after you enable “Share gameplay statistics”</td></tr>
-          <tr><td data-label="Data">Crash and diagnostic information, including app/device details, crash traces, and sanitized error messages</td><td data-label="Why">To find and fix crashes and defects</td><td data-label="Where">Firebase Crashlytics when collection is enabled by the app and your gameplay-statistics choice</td></tr>
+          <tr><td data-label="Data">Settings, saved progress, discoveries, recent runs, scores, Run codes, and a resumable checkpoint</td><td data-label="Why">To remember preferences, restore play, show records, and unlock content</td><td data-label="Where">Locally in the app on your device</td></tr>
+          <tr><td data-label="Data">Gameplay events such as run and wave boundaries, score, duration, builds, routes, damage totals, Blast use, pickups, service outcomes, whether a continue was used, and optional per-impression ad-revenue values by format and placement</td><td data-label="Why">To balance the game, understand play, improve reliability, and measure aggregate ad performance</td><td data-label="Where">Google Analytics for Firebase only after you enable “Share gameplay and crash data”</td></tr>
+          <tr><td data-label="Data">Crash and diagnostic information, including app/device details, crash traces, and sanitized error messages</td><td data-label="Why">To find and fix crashes and defects</td><td data-label="Where">Firebase Crashlytics when collection is enabled by the app and your gameplay-and-crash-data choice</td></tr>
           <tr><td data-label="Data">Ad request and interaction information, which may include IP address, general location inferred from IP, device or app identifiers, ad impressions, clicks, and diagnostics</td><td data-label="Why">To request, deliver, measure, limit, and protect rewarded, results-banner, and between-run ads</td><td data-label="Where">Google Mobile Ads and its advertising partners, according to the privacy choices shown for your region</td></tr>
           <tr><td data-label="Data">App Store product and verified purchase entitlement</td><td data-label="Why">To remove ads and restore the purchase</td><td data-label="Where">Verified on-device through Apple StoreKit; payment information stays with Apple</td></tr>
           <tr><td data-label="Data">Eligible score and Game Center player identity</td><td data-label="Why">To submit and display leaderboard scores when you choose Game Center</td><td data-label="Where">Processed by Apple through Game Center</td></tr>
           <tr><td data-label="Data">Email address and message contents</td><td data-label="Why">To answer support or privacy requests</td><td data-label="Where">Received only when you contact us</td></tr>
         </tbody>
       </table>
-      <p>AFTERARC does not ask for your contacts, photos, microphone, camera, or precise GPS location. It does not require an account. Replay seeds, purchase receipts, transaction IDs, ad clicks, and advertising IDs are not included in app-defined gameplay or ad-revenue telemetry. If you enable gameplay statistics, the app may send a bounded paid value, currency, precision, format, and placement for an ad impression so we can review aggregate ad performance; this is not a financial account or player identifier.</p>
+      <p>AFTERARC does not ask for your contacts, photos, microphone, camera, or precise GPS location. It does not require an account. Run codes, purchase receipts, transaction IDs, ad clicks, and advertising IDs are not included in app-defined gameplay or ad-revenue telemetry. If you enable gameplay and crash data sharing, the app may send a bounded paid value, currency, precision, format, and placement for an ad impression so we can review aggregate ad performance; this is not a financial account or player identifier. Firebase may associate optional analytics and crash data with app-instance, installation, session, device, or app identifiers managed by its SDKs.</p>
     </section>
 
     <section id="your-choices">
       <h2>Your choices</h2>
       <ul>
-        <li><strong>Gameplay statistics and crash reports:</strong> sharing is off by default. Change “Share gameplay statistics” in Settings at any time. Turning it off stops new app-defined events and error submissions; information already sent cannot be recalled.</li>
-        <li><strong>Advertising privacy:</strong> use Settings &gt; Ad Privacy to review or change the choices provided for your region. The game checks the applicable consent status before requesting an ad. Non-owners may see a banner only on a meaningful results screen or an interstitial at a deliberate break between runs, subject to availability and cooldown.</li>
+        <li><strong>Gameplay and crash data:</strong> sharing is off by default. Change “Share gameplay and crash data” in Settings at any time. Turning it off stops new app-defined events and error submissions; information already sent cannot be recalled.</li>
+        <li><strong>Ad choices:</strong> use Settings &gt; Ad Choices to review or change the choices provided for your region. The game checks the applicable consent status before requesting an ad. Non-owners may see a banner only on a meaningful results screen or an interstitial at a deliberate break between runs, subject to availability and cooldown.</li>
         <li><strong>Rewarded continues:</strong> watching an ad to continue a lost run is optional. You can end the run and start another without watching one.</li>
         <li><strong>Remove Ads:</strong> the optional one-time purchase disables game advertising and includes the same once-per-run continue without an ad. Restore Purchases checks the Apple Account entitlement. The price shown by the App Store is localized for your storefront.</li>
         <li><strong>Game Center:</strong> signing in and using the leaderboard is your choice. Apple controls Game Center identity, visibility, and records.</li>
-        <li><strong>Local game data:</strong> deleting the app removes its local settings, history, seeds, progression, and checkpoint. Offloading the app keeps its documents and data for a later reinstall.</li>
+        <li><strong>Local game data:</strong> deleting the app removes its local settings, history, Run codes, progression, and checkpoint. Offloading the app keeps its documents and data for a later reinstall.</li>
       </ul>
-      <p class="callout">AFTERARC has no separate player account or cloud-save service. Pseudonymous analytics or advertising records held by third parties may not be possible for us to connect back to you.</p>
+      <p class="callout">AFTERARC has no separate player account or cloud-save service. Optional analytics, crash, and advertising services can use app-instance, installation, or device identifiers. AFTERARC does not attach your name or email to those events, but providers can use these identifiers to distinguish an app installation or device.</p>
     </section>
 
     <section>
@@ -83,7 +83,7 @@
 
     <section>
       <h2>Your rights and contact</h2>
-      <p>Depending on where you live, you may have rights to ask for access to, correction of, deletion of, restriction of, or a copy of personal information we control, or to object to certain processing. You can withdraw optional gameplay analytics and crash-reporting consent in Settings and change available advertising choices in Ad Privacy.</p>
+      <p>Depending on where you live, you may have rights to ask for access to, correction of, deletion of, restriction of, or a copy of personal information we control, or to object to certain processing. You can withdraw optional gameplay analytics and crash-reporting consent in Settings and change available advertising choices in Ad Choices.</p>
       <p>Email <a href="mailto:pranavgarg@gmail.com?subject=AFTERARC%20privacy%20request">pranavgarg@gmail.com</a> with a privacy request. We may need to verify it, and third-party pseudonymous records may not be identifiable from the information provided. You can contact your local data-protection authority if you have a concern.</p>
     </section>
 
