@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Orbital game icon</title>
+  <desc id="description">A mint orbit curls around a faceted crystal and amber ball on a deep teal field.</desc>
+  <defs>
+    <radialGradient id="field" cx="45%" cy="37%" r="76%">
+      <stop stop-color="#173d42"/><stop offset=".6" stop-color="#082125"/><stop offset="1" stop-color="#031215"/>
+    </radialGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ecfff5"/><stop offset=".48" stop-color="#b8ffe2"/><stop offset="1" stop-color="#51c7b1"/>
+    </linearGradient>
+    <radialGradient id="halo"><stop stop-color="#75f9d2" stop-opacity=".15"/><stop offset="1" stop-color="#75f9d2" stop-opacity="0"/></radialGradient>
+  </defs>
+  <path fill="url(#field)" d="M0 0h1024v1024H0z"/>
+  <circle cx="512" cy="512" r="370" fill="url(#halo)"/>
+  <circle cx="512" cy="512" r="325" fill="none" stroke="#386b6e" stroke-width="5"/>
+  <path d="M260 307A325 325 0 1 0 816 397" fill="none" stroke="url(#mint)" stroke-width="78"/>
+  <path d="M254 315A337 337 0 0 0 759 741" fill="none" stroke="#f2fff5" stroke-opacity=".28" stroke-width="7"/>
+  <path d="M512 342 634 477 512 648 390 477Z" fill="#a9f7da"/>
+  <path d="M512 342 512 493 390 477Z" fill="#f0fff5"/>
+  <path d="M512 342 634 477 512 493Z" fill="#bff9df"/>
+  <path d="M512 493 634 477 512 648Z" fill="#52b5ac"/>
+  <path d="M390 477 512 493 512 648Z" fill="#79ddc1"/>
+  <circle cx="729" cy="270" r="62" fill="#ffcf89"/>
+  <circle cx="714" cy="255" r="20" fill="#fff2cc"/>
+</svg>
