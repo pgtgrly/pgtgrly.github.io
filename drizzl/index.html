@@ -8,8 +8,10 @@ layout: null
   {% include analytics.html %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
     <title>Drizzl - ASMR Sandbox | Sand art, sound and physics</title>
     <link rel="stylesheet" href="style.css">
+    <script src="sand-background.js" defer></script>
     <meta name="description"
         content="Drizzl - ASMR Sandbox is a creative sand and fluid physics playground for iPhone and iPad. Make art, unwind with live ASMR sound, and experiment with gravity.">
     <!-- Open Graph -->
@@ -50,19 +52,32 @@ layout: null
 
 <body>
 
-    <div class="ambient-glow"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header container">
+        <a class="brand" href="index.html" aria-current="page">Drizzl <span>ASMR Sandbox</span></a>
+        <nav class="site-nav" aria-label="Drizzl"><a href="#explore">Explore</a><a href="#questions">Questions</a><a href="drizzl-support.html">Support</a></nav>
+    </header>
+    <main id="main">
 
-    <header class="hero">
-        <div class="container">
-            <h1 class="fade-in">Drizzl<br><span class="gradient-text">ASMR Sandbox</span></h1>
+    <section class="hero" aria-labelledby="hero-title">
+        <canvas class="sand-background" id="sand-background" aria-hidden="true"></canvas>
+        <button class="background-toggle" type="button" aria-controls="sand-background" hidden>Pause background</button>
+        <div class="container hero-layout">
+            <div class="hero-copy">
+            <h1 id="hero-title">Drizzl <span>ASMR Sandbox</span></h1>
             <p class="hero-subtitle">A little time for yourself. Pour some sand, listen to it fall, and make something of your own. Tilt your device when you want to see it move.</p>
-            <div class="cta-container" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+            <div class="cta-container">
                 <a href="https://apps.apple.com/us/app/drizzl-asmr-sandbox/id6756356975" target="_blank"
                     rel="noopener" class="cta-button">Download Drizzl on the App Store</a>
-                <span style="font-size: 0.9rem; color: #888; font-weight: 300;">iPhone and iPad · iOS / iPadOS 17.6+ · Free download with ads and in-app purchases</span>
+                <span class="download-note">iPhone and iPad · iOS / iPadOS 17.6+ · Free download with ads and in-app purchases</span>
             </div>
+            </div>
+            <figure class="hero-preview">
+                <img src="assets/app-store-preview.jpg" width="222" height="480" alt="Drizzl App Store screenshot showing colorful sand on the sandbox canvas" fetchpriority="high">
+                <figcaption>Drizzl on the App Store</figcaption>
+            </figure>
         </div>
-    </header>
+    </section>
 
     <section class="intro">
         <div class="container">
@@ -71,37 +86,32 @@ layout: null
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="explore">
         <div class="container">
             <h2>Endless Possibilities</h2>
-            <div class="grid">
-                <div class="card">
-                    <span class="card-icon">🧪</span>
+            <div class="feature-list">
+                <article class="feature">
                     <h3>Mix Materials</h3>
                     <p>What happens when heavy sand hits light air? Or when bouncing particles meet sticky ones?</p>
-                </div>
-                <div class="card">
-                    <span class="card-icon">🎨</span>
+                </article>
+                <article class="feature">
                     <h3>Create Art</h3>
                     <p>And destroy it (if you please). Build satisfying mounds or carve clean lines.</p>
-                </div>
-                <div class="card">
-                    <span class="card-icon">🔬</span>
+                </article>
+                <article class="feature">
                     <h3>Discover</h3>
                     <p>Every combination behaves differently. Experiment with gravity, mixing, and flow.</p>
-                </div>
-                <div class="card">
-                    <span class="card-icon">🎰</span>
+                </article>
+                <article class="feature">
                     <h3>Infinite Variety</h3>
                     <p>No two sessions are the same. The physics engine ensures new, mesmerising patterns every time.
                     </p>
-                </div>
-                <div class="card">
-                    <span class="card-icon">🔊</span>
+                </article>
+                <article class="feature">
                     <h3>Generative Audio</h3>
                     <p>It sounds live. Soft slides, heavy crashes. Mixing materials creates your own evolving ASMR
                         soundtrack.</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -114,11 +124,11 @@ layout: null
                     <strong>Pour & Slice</strong>
                     <span>Create satisfying mounds, then carve clean lines through them.</span>
                 </div>
-                <div class="experience-item" style="border-color: var(--accent-secondary)">
+                <div class="experience-item">
                     <strong>Tilt & Chaos</strong>
                     <span>Use gravity to slide the pile, or shake your device to send everything flying.</span>
                 </div>
-                <div class="experience-item" style="border-color: var(--accent-tertiary)">
+                <div class="experience-item">
                     <strong>Zone Out</strong>
                     <span>Take a brain break with flowing sand, live sound, and a canvas you can keep changing.</span>
                 </div>
@@ -128,7 +138,7 @@ layout: null
 
     <section class="tech-specs">
         <div class="container">
-            <h3>The Tech</h3>
+            <h2>The Tech</h2>
             <ul class="specs-list">
                 <li>Metal-powered sand and fluid simulation</li>
                 <li>Grainy haptic feedback on supported iPhones</li>
@@ -139,32 +149,34 @@ layout: null
         </div>
     </section>
 
-    <section class="features" id="questions">
+    <section class="questions" id="questions">
         <div class="container">
             <h2>A few things before you play</h2>
-            <div class="grid">
-                <article class="card"><h3>What is Drizzl - ASMR Sandbox?</h3><p>Drizzl is a kinetic sand and fluid sandbox for iPhone and iPad. Pour and mix particles, carve sand art, change gravity, and hear the sound respond to what you do.</p></article>
-                <article class="card"><h3>Can I use Drizzl for a relaxing ASMR break?</h3><p>Pour a slow pile, listen to the sand move, and change the canvas at your own pace. Drizzl combines freeform play, live ASMR sound, and haptic feedback on supported iPhones.</p></article>
-                <article class="card"><h3>Can I experiment with physics and gravity?</h3><p>Yes. Mix sand and fluids, watch them flow and pile up, then tilt or shake your device to change how the scene moves. You can make a shape and see what gravity does to it.</p></article>
-                <article class="card"><h3>Can I make my own sand art?</h3><p>Yes. Build a pile, mix colors and materials, and carve lines through your canvas. Tilt or shake your device when you want to send it all moving again.</p></article>
-                <article class="card"><h3>Does it have sound and haptics?</h3><p>The audio responds to the physics, from soft slides to heavier crashes. Supported iPhones also have grainy haptic feedback. Haptics depend on the device.</p></article>
-                <article class="card"><h3>Does Drizzl work offline?</h3><p>The core sandbox works offline and no account is required. Ads and purchases need an internet connection.</p></article>
-                <article class="card"><h3>Is Drizzl free?</h3><p>Drizzl is free to download. It contains ads and optional in-app purchases. The App Store shows the current purchase options for your country.</p></article>
-                <article class="card"><h3>Which devices can I use?</h3><p>Drizzl supports iPhone and iPad with iOS or iPadOS 17.6 or later. Search the App Store for <strong>Drizzl - ASMR Sandbox</strong>, by Pranav Garg.</p></article>
+            <div class="question-list">
+                <article class="question"><h3>What is Drizzl - ASMR Sandbox?</h3><p>Drizzl is a kinetic sand and fluid sandbox for iPhone and iPad. Pour and mix particles, carve sand art, change gravity, and hear the sound respond to what you do.</p></article>
+                <article class="question"><h3>Can I use Drizzl for a relaxing ASMR break?</h3><p>Pour a slow pile, listen to the sand move, and change the canvas at your own pace. Drizzl combines freeform play, live ASMR sound, and haptic feedback on supported iPhones.</p></article>
+                <article class="question"><h3>Can I experiment with physics and gravity?</h3><p>Yes. Mix sand and fluids, watch them flow and pile up, then tilt or shake your device to change how the scene moves. You can make a shape and see what gravity does to it.</p></article>
+                <article class="question"><h3>Can I make my own sand art?</h3><p>Yes. Build a pile, mix colors and materials, and carve lines through your canvas. Tilt or shake your device when you want to send it all moving again.</p></article>
+                <article class="question"><h3>Does it have sound and haptics?</h3><p>The audio responds to the physics, from soft slides to heavier crashes. Supported iPhones also have grainy haptic feedback. Haptics depend on the device.</p></article>
+                <article class="question"><h3>Does Drizzl work offline?</h3><p>The core sandbox works offline and no account is required. Ads and purchases need an internet connection.</p></article>
+                <article class="question"><h3>Is Drizzl free?</h3><p>Drizzl is free to download. It contains ads and optional in-app purchases. The App Store shows the current purchase options for your country.</p></article>
+                <article class="question"><h3>Which devices can I use?</h3><p>Drizzl supports iPhone and iPad with iOS or iPadOS 17.6 or later. Search the App Store for <strong>Drizzl - ASMR Sandbox</strong>, by Pranav Garg.</p></article>
             </div>
         </div>
     </section>
 
-    <footer>
+    </main>
+
+    <footer class="site-footer">
         <div class="container">
-            <span class="footer-brand gradient-text">Drizzl - ASMR Sandbox</span>
+            <span class="footer-brand">Drizzl - ASMR Sandbox</span>
             <p>ASMR Sandbox • A Limitless Physics Playground</p>
-            <p style="font-size: 0.9rem; opacity: 0.6; margin-top: 2rem;">
-                <a href="drizzl-privacy.html" style="color:inherit; margin-right: 1rem;">Privacy</a>
-                <a href="drizzl-terms.html" style="color:inherit; margin-right: 1rem;">Terms</a>
-                <a href="drizzl-support.html" style="color:inherit; margin-right: 1rem;">Support</a>
-                <a href="/apps/" style="color:inherit;">More apps by Pranav Garg</a>
-            </p>
+            <nav class="footer-links" aria-label="More Drizzl pages">
+                <a href="drizzl-privacy.html">Privacy</a>
+                <a href="drizzl-terms.html">Terms</a>
+                <a href="drizzl-support.html">Support</a>
+                <a href="/apps/">More apps by Pranav Garg</a>
+            </nav>
         </div>
     </footer>
 

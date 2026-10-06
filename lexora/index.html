@@ -9,6 +9,7 @@ layout: null
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lexora - SAT Prep | Vocabulary and spaced repetition</title>
+    <link rel="preload" href="fonts/fraunces-latin.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="style.css">
     <meta name="description" content="Build your English vocabulary with Lexora - SAT Prep: 3,400+ SAT words, spaced repetition, definitions, examples and pronunciation. For iPhone and iPad.">
     <meta property="og:title" content="Lexora - SAT Prep | Vocabulary and spaced repetition">
@@ -45,109 +46,128 @@ layout: null
 </head>
 
 <body>
-    <div class="container hero">
-        <div>
-            <span class="badge">SAT Verbal • Daily Coach</span>
-            <h1>Lexora - SAT Prep</h1>
-            <p>Keep meeting words you almost know? Learn their meanings, hear them aloud, and practice the ones that trip you up. Build your English vocabulary with 3,400+ SAT words and spaced repetition.</p>
-            <div class="cta-row">
-                <a class="cta" href="https://apps.apple.com/us/app/lexora-sat-prep/id6756804938" target="_blank" rel="noopener">Download Lexora on the App Store</a>
-                <a class="cta ghost" href="lexora-support.html">Need help?</a>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="container site-header">
+        <a class="brand" href="/lexora/" aria-label="Lexora home">Lexora</a>
+        <nav class="site-nav" aria-label="Lexora navigation">
+            <a href="#practice">Practice</a>
+            <a href="#questions">Questions</a>
+            <a href="lexora-support.html">Support</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="container hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title">Lexora <span class="title-detail">- SAT Prep</span></h1>
+                <p>Keep meeting words you almost know? Learn their meanings, hear them aloud, and practice the ones that trip you up. Build your English vocabulary with 3,400+ SAT words and spaced repetition.</p>
+                <div class="cta-row">
+                    <a class="cta" href="https://apps.apple.com/us/app/lexora-sat-prep/id6756804938" target="_blank" rel="noopener">Download Lexora on the App Store<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+                    <a class="cta ghost" href="lexora-support.html">Need help?</a>
+                </div>
+                <p class="study-note">SAT Verbal • Daily Coach</p>
             </div>
-            <div class="panel-grid" style="margin-top: 1.2rem;">
-                <div class="card">
-                    <span class="pill">3,400+ SAT Words</span>
+            <figure class="hero-media">
+                <img src="images/learning-card.jpg" width="222" height="480" alt="Lexora’s word entry screen with a definition, example sentence, memory tip and Got it button." fetchpriority="high">
+                <figcaption>Inside Lexora</figcaption>
+            </figure>
+        </section>
+
+        <section class="container study-overview" aria-label="Lexora at a glance">
+            <div class="study-brief">
+                <article>
+                    <h2>3,400+ SAT Words</h2>
                     <p>Starter, Core, Master, and Expert decks curated for SAT.</p>
-                </div>
-                <div class="card">
-                    <span class="pill">Daily Sessions</span>
+                </article>
+                <article>
+                    <h2>Daily Sessions</h2>
                     <p>New and due words, scheduled with FSRS by default. SM-2 and HLR are also available.</p>
-                </div>
-                <div class="card">
-                    <span class="pill">Practice Your Way</span>
+                </article>
+                <article>
+                    <h2>Practice Your Way</h2>
                     <p>Review studied words, target weak words, preview new words, or take a five-word quiz.</p>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="card">
-            <h3>A little more than a flashcard</h3>
-            <ul class="list">
-                <li>Adaptive review based on your responses (Again/Hard/Good/Easy).</li>
-                <li>Context-rich entries: definitions, examples, etymology, mnemonics.</li>
-                <li>Achievements, streaks, and a home-screen widget to keep you honest.</li>
-                <li>Free download with ads. Optional Premium subscriptions add a knowledge-growth timeline and activity heatmap.</li>
-            </ul>
-        </div>
-    </div>
+            <aside class="study-companion" aria-labelledby="companion-title">
+                <h2 id="companion-title">A little more than a flashcard</h2>
+                <ul class="list">
+                    <li>Adaptive review based on your responses (Again/Hard/Good/Easy).</li>
+                    <li>Context-rich entries: definitions, examples, etymology, mnemonics.</li>
+                    <li>Achievements, streaks, and a home-screen widget to keep you honest.</li>
+                    <li>Free download with ads. Optional Premium subscriptions add a knowledge-growth timeline and activity heatmap.</li>
+                </ul>
+            </aside>
+        </section>
 
-    <div class="container features">
-        <h2>Choose how you practice</h2>
-        <div class="panel-grid">
-            <div class="card">
-                <h3>Reviews that come back</h3>
-                <p>FSRS schedules reviews automatically. Difficult words return more often, while new words arrive gradually.</p>
+        <section class="container features" id="practice" aria-labelledby="practice-title">
+            <h2 id="practice-title">Choose how you practice</h2>
+            <div class="feature-list">
+                <article>
+                    <h3>Reviews that come back</h3>
+                    <p>FSRS schedules reviews automatically. Difficult words return more often, while new words arrive gradually.</p>
+                </article>
+                <article>
+                    <h3>More ways to answer</h3>
+                    <p>Type an answer, fill in the blank, or choose from multiple choice. Hints and typo detection help when you get stuck.</p>
+                </article>
+                <article>
+                    <h3>Motivation that lasts</h3>
+                    <p>Track a daily streak, use a one-day freeze when you miss a day, and earn badges as you practice.</p>
+                </article>
+                <article>
+                    <h3>Learn it deeper</h3>
+                    <p>Etymology and mnemonic fields help you build hooks instead of memorizing in isolation.</p>
+                </article>
+                <article>
+                    <h3>Search by meaning</h3>
+                    <p>Know what you want to say but not the word? Search by meaning, then listen to its pronunciation.</p>
+                </article>
+                <article>
+                    <h3>No account needed</h3>
+                    <p>Start without an email address or password. Your learning progress stays on your device.</p>
+                </article>
             </div>
-            <div class="card">
-                <h3>More ways to answer</h3>
-                <p>Type an answer, fill in the blank, or choose from multiple choice. Hints and typo detection help when you get stuck.</p>
-            </div>
-            <div class="card">
-                <h3>Motivation that lasts</h3>
-                <p>Track a daily streak, use a one-day freeze when you miss a day, and earn badges as you practice.</p>
-            </div>
-            <div class="card">
-                <h3>Learn it deeper</h3>
-                <p>Etymology and mnemonic fields help you build hooks instead of memorizing in isolation.</p>
-            </div>
-            <div class="card">
-                <h3>Search by meaning</h3>
-                <p>Know what you want to say but not the word? Search by meaning, then listen to its pronunciation.</p>
-            </div>
-            <div class="card">
-                <h3>No account needed</h3>
-                <p>Start without an email address or password. Your learning progress stays on your device.</p>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="container">
-        <div class="card" style="display:flex; flex-wrap:wrap; gap:1.5rem; align-items:center; justify-content:space-between;">
+        <section class="container download" aria-labelledby="download-title">
             <div>
-                <h2>Which word will you remember next?</h2>
-                <p style="max-width:520px;">Start with a few words. Learn their meanings, try them in a sentence, and let your review schedule bring them back.</p>
+                <h2 id="download-title">Which word will you remember next?</h2>
+                <p>Start with a few words. Learn their meanings, try them in a sentence, and let your review schedule bring them back.</p>
             </div>
             <div class="cta-row">
-                <a class="cta" href="https://apps.apple.com/us/app/lexora-sat-prep/id6756804938" target="_blank" rel="noopener">Download Lexora on the App Store</a>
+                <a class="cta" href="https://apps.apple.com/us/app/lexora-sat-prep/id6756804938" target="_blank" rel="noopener">Download Lexora on the App Store<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
                 <a class="cta ghost" href="lexora-privacy.html">Privacy</a>
                 <a class="cta ghost" href="lexora-terms.html">Terms</a>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <section class="container features" id="questions">
-        <h2>Questions about Lexora</h2>
-        <div class="panel-grid">
-            <article class="card"><h3>What is Lexora - SAT Prep?</h3><p>Lexora is an iPhone and iPad app for SAT vocabulary practice. It combines 3,400+ curated words, spaced repetition, meaning search, pronunciation, and short practice sessions.</p></article>
-            <article class="card"><h3>Can I use Lexora to build my English vocabulary?</h3><p>Yes. Its words are curated for SAT study, and you can use the definitions, examples, pronunciation and spaced repetition for everyday word practice too. Focus on unfamiliar words or return to the ones you find difficult.</p></article>
-            <article class="card"><h3>Can I use Lexora alongside GRE vocabulary study?</h3><p>Lexora offers word meanings, examples, pronunciation and scheduled review. Its current word packs are curated for the SAT. For GRE preparation, pair vocabulary practice with GRE reading comprehension, text completion and sentence equivalence practice. <a href="https://www.ets.org/gre/test-takers/general-test/prepare/content/verbal-reasoning.html">See the official GRE Verbal Reasoning question types.</a></p></article>
-            <article class="card"><h3>What comes with each word?</h3><p>A definition, example sentence, etymology, and a memory tip you can edit. Words are organized into four difficulty packs.</p></article>
-            <article class="card"><h3>Which spaced repetition system does it use?</h3><p>FSRS is the default. You can also choose SM-2 or the experimental HLR option. Your progress migrates when you switch.</p></article>
-            <article class="card"><h3>What can I practice?</h3><p>Drill studied words, work on your weakest vocabulary, preview new words, or try a random five-word quiz. Practice sessions do not change your review schedule.</p></article>
-            <article class="card"><h3>Is Lexora free?</h3><p>Lexora is free to download with ads and optional Premium subscriptions. Premium adds a knowledge-growth timeline and activity heatmap. Check the App Store for prices in your country.</p></article>
-            <article class="card"><h3>Do I need an account?</h3><p>No email address, password, or account is required. Learning progress stays on your device. Some functions require an internet connection.</p></article>
-        </div>
-        <p>Lexora - SAT Prep is made by Pranav Garg. It supports iPhone and iPad with iOS or iPadOS 18.0 or later.</p>
-    </section>
+        <section class="container features questions" id="questions" aria-labelledby="questions-title">
+            <h2 id="questions-title">Questions about Lexora</h2>
+            <div class="question-list">
+                <article><h3>What is Lexora - SAT Prep?</h3><p>Lexora is an iPhone and iPad app for SAT vocabulary practice. It combines 3,400+ curated words, spaced repetition, meaning search, pronunciation, and short practice sessions.</p></article>
+                <article><h3>Can I use Lexora to build my English vocabulary?</h3><p>Yes. Its words are curated for SAT study, and you can use the definitions, examples, pronunciation and spaced repetition for everyday word practice too. Focus on unfamiliar words or return to the ones you find difficult.</p></article>
+                <article><h3>Can I use Lexora alongside GRE vocabulary study?</h3><p>Lexora offers word meanings, examples, pronunciation and scheduled review. Its current word packs are curated for the SAT. For GRE preparation, pair vocabulary practice with GRE reading comprehension, text completion and sentence equivalence practice. <a href="https://www.ets.org/gre/test-takers/general-test/prepare/content/verbal-reasoning.html">See the official GRE Verbal Reasoning question types.</a></p></article>
+                <article><h3>What comes with each word?</h3><p>A definition, example sentence, etymology, and a memory tip you can edit. Words are organized into four difficulty packs.</p></article>
+                <article><h3>Which spaced repetition system does it use?</h3><p>FSRS is the default. You can also choose SM-2 or the experimental HLR option. Your progress migrates when you switch.</p></article>
+                <article><h3>What can I practice?</h3><p>Drill studied words, work on your weakest vocabulary, preview new words, or try a random five-word quiz. Practice sessions do not change your review schedule.</p></article>
+                <article><h3>Is Lexora free?</h3><p>Lexora is free to download with ads and optional Premium subscriptions. Premium adds a knowledge-growth timeline and activity heatmap. Check the App Store for prices in your country.</p></article>
+                <article><h3>Do I need an account?</h3><p>No email address, password, or account is required. Learning progress stays on your device. Some functions require an internet connection.</p></article>
+            </div>
+            <p class="app-details">Lexora - SAT Prep is made by Pranav Garg. It supports iPhone and iPad with iOS or iPadOS 18.0 or later.</p>
+        </section>
+    </main>
 
-    <div class="footer">
-        <div>&copy; 2026 Lexora - SAT Prep. Built by Pranav Garg.</div>
-        <div style="margin-top:0.6rem;">
-            <a href="lexora-privacy.html">Privacy</a>
-            <a href="lexora-terms.html">Terms</a>
-            <a href="lexora-support.html">Support</a>
-            <a href="/apps/">More apps by Pranav Garg</a>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Lexora - SAT Prep. Built by Pranav Garg.</p>
+            <nav class="footer-nav" aria-label="Lexora footer">
+                <a href="lexora-privacy.html">Privacy</a>
+                <a href="lexora-terms.html">Terms</a>
+                <a href="lexora-support.html">Support</a>
+                <a href="/apps/">More apps by Pranav Garg</a>
+            </nav>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>
