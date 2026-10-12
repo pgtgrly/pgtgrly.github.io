@@ -20,8 +20,8 @@
   <main class="document" id="content">
     <header class="document-header">
       <h1>Privacy<br><em>Policy.</em></h1><p class="document-subtitle">Your data, in plain language</p>
-      <p class="lede">AFTERARC is an iPhone game created by Pranav Garg. This policy explains what stays on your device, what may leave it, and the choices available to you.</p>
-      <p class="meta">Effective 20 September 2026</p>
+      <p class="lede">AFTERARC is a mobile game for iPhone and Android created by Pranav Garg. This policy explains what stays on your device, what may leave it, and the choices available to you.</p>
+      <p class="meta">Effective 12 October 2026</p>
     </header>
 
     <section>
@@ -30,39 +30,44 @@
         <thead><tr><th scope="col">Data</th><th scope="col">Why</th><th scope="col">Where</th></tr></thead>
         <tbody>
           <tr><td data-label="Data">Settings, saved progress, discoveries, recent runs, scores, Run codes, and a resumable checkpoint</td><td data-label="Why">To remember preferences, restore play, show records, and unlock content</td><td data-label="Where">Locally in the app on your device</td></tr>
+          <tr><td data-label="Data">Reminder schedules, notification permission state, and delivered or opened reminder records</td><td data-label="Why">To offer optional local re-engagement reminders and open the game when you tap one</td><td data-label="Where">Locally on your device through Apple UserNotifications or Android notification alarms; no reminder content is sent to our server</td></tr>
           <tr><td data-label="Data">Gameplay events such as run and wave boundaries, score, duration, builds, routes, damage totals, Blast use, pickups, service outcomes, whether a recovery was used, and optional per-impression ad-revenue values by format and placement</td><td data-label="Why">To balance the game, understand play, improve reliability, and measure aggregate ad performance</td><td data-label="Where">Google Analytics for Firebase while “Share gameplay and crash data” is enabled</td></tr>
           <tr><td data-label="Data">Crash and diagnostic information, including app/device details, crash traces, and sanitized error messages</td><td data-label="Why">To find and fix crashes and defects</td><td data-label="Where">Firebase Crashlytics when collection is enabled by the app and your gameplay-and-crash-data choice</td></tr>
           <tr><td data-label="Data">Ad request and interaction information, which may include IP address, general location inferred from IP, device or app identifiers, ad impressions, clicks, and diagnostics</td><td data-label="Why">To request, deliver, measure, limit, and protect rewarded, pause-banner, results-banner, and between-run ads</td><td data-label="Where">Google Mobile Ads and its advertising partners, according to the privacy choices shown for your region</td></tr>
-          <tr><td data-label="Data">App Store product, verified purchase entitlement, and purchase measurement</td><td data-label="Why">To remove ads and restore the purchase</td><td data-label="Where">Verified on-device through Apple StoreKit. When gameplay data sharing is enabled, Firebase receives the verified purchase transaction to measure purchase value and currency. Payment-card and banking details stay with Apple</td></tr>
-          <tr><td data-label="Data">Eligible score and Game Center player identity</td><td data-label="Why">To submit and display leaderboard scores when you choose Game Center</td><td data-label="Where">Processed by Apple through Game Center</td></tr>
+          <tr><td data-label="Data">App Store or Google Play product, purchase entitlement, and purchase measurement</td><td data-label="Why">To remove ads and restore the purchase</td><td data-label="Where">On iPhone, the app uses Apple StoreKit’s on-device transaction verification; on Android, it uses Google Play Billing to query the current Google Play account’s purchase and acknowledge completed non-consumable purchases on-device. When gameplay data sharing is enabled, Firebase receives a purchase measurement event containing value and currency; the app has no purchase-verification server. Payment-card and banking details stay with Apple or Google Play</td></tr>
+          <tr><td data-label="Data">Eligible score and Game Center or Google Play Games player identity</td><td data-label="Why">To submit and display leaderboard scores when you choose Game Center or Google Play Games</td><td data-label="Where">Processed by Apple through Game Center or by Google through Google Play Games, when you choose that platform service</td></tr>
           <tr><td data-label="Data">Email address and message contents</td><td data-label="Why">To answer support or privacy requests</td><td data-label="Where">Received only when you contact us</td></tr>
         </tbody>
       </table>
-      <p>AFTERARC does not ask for your contacts, photos, microphone, camera, or precise GPS location. It does not require an account. Run codes, ad clicks, and advertising IDs are not included in app-defined gameplay or ad-revenue telemetry. Verified App Store transaction information is sent separately through Firebase’s purchase-measurement API while sharing is enabled. Restoring an existing entitlement is not counted as a new sale. While gameplay and crash data sharing is enabled, the app may send a bounded paid value, currency, precision, format, and placement for an ad impression so we can review aggregate ad performance; this is not a financial account or player identifier. Firebase may associate optional analytics and crash data with app-instance, installation, session, device, or app identifiers managed by its SDKs.</p>
+      <p>AFTERARC does not ask for your contacts, photos, microphone, camera, or precise GPS location. It does not require a separate app account or login. Game Center and Google Play Games may use their own optional platform sign-in for leaderboard features. Run codes, ad clicks, and advertising IDs are not included in app-defined gameplay or ad-revenue telemetry. On iPhone, StoreKit’s verified transaction is sent separately through Firebase’s purchase-measurement API while sharing is enabled; on Android, Firebase receives only the consent-gated purchase event’s product ID, value, and currency. The app does not send purchase tokens or order IDs to an AFTERARC server. Restoring an existing entitlement is not counted as a new sale. While gameplay and crash data sharing is enabled, the app may send a bounded paid value, currency, precision, format, and placement for an ad impression so we can review aggregate ad performance; this is not a financial account or player identifier. Firebase may associate optional analytics and crash data with app-instance, installation, session, device, or app identifiers managed by its SDKs.</p>
     </section>
 
     <section id="your-choices">
       <h2>Your choices</h2>
       <ul>
-        <li><strong>Gameplay and crash data:</strong> sharing is on for new installations. Any previously saved off choice is respected. Change “Share gameplay and crash data” in Settings at any time. Turning it off stops new app-defined events and error submissions; information already sent cannot be recalled.</li>
-        <li><strong>Ad choices:</strong> use Settings &gt; Ad Choices to review or change the choices provided for your region. The game checks regional consent and Apple’s tracking-permission decision before requesting an ad. Non-owners may see a banner on the pause screen or on the results screen after a run ends, or an interstitial at a deliberate break between runs, subject to your privacy choices, provider availability, and cooldown.</li>
-        <li><strong>Apple tracking permission:</strong> the game asks for permission before advertising services can track activity across other companies’ apps and websites. If you allow it, these services may use the advertising identifier to personalize and measure ads. Declining does not stop you playing. You can change this permission in iPhone Settings &gt; Privacy &amp; Security &gt; Tracking. Ad delivery still depends on regional choices and provider availability.</li>
+        <li><strong>Gameplay and crash data:</strong> sharing is on for new installations on iPhone and Android. Any previously saved off choice is respected. Change “Share gameplay and crash data” in Settings at any time. Turning it off stops new app-defined events and error submissions to Firebase; information already sent cannot be recalled.</li>
+        <li><strong>Ad choices:</strong> use Settings &gt; Ad Choices to review or change the choices provided for your region. The game checks regional consent before requesting an ad. On iPhone, Apple’s tracking permission is an additional iOS-only choice; Android uses its regional consent flow and device advertising settings. Non-owners may see a banner on the pause screen or on the results screen after a run ends, or an interstitial at a deliberate break between runs, subject to your privacy choices, provider availability, and cooldown.</li>
+        <li><strong>Local reminders:</strong> optional reminders are scheduled on your device. iPhone asks for notification permission through the system; Android may ask for notification permission on Android 13 or later. You can change the permission in iPhone Settings or Android app notification settings. Reminder schedules, delivery, and tap records stay on the device and are not sent to our server.</li>
+        <li><strong>Apple tracking permission (iPhone only):</strong> the game asks for permission before advertising services can track activity across other companies’ apps and websites. If you allow it, these services may use the advertising identifier to personalize and measure ads. Declining does not stop you playing. You can change this permission in iPhone Settings &gt; Privacy &amp; Security &gt; Tracking. Ad delivery still depends on regional choices and provider availability.</li>
         <li><strong>Rewarded recovery:</strong> watching an ad for one recovery after a lost run is optional. Choose Continue, or Rewind when a wave-start checkpoint is available; either choice spends the run’s single recovery. You can end the run and start another without watching one.</li>
-        <li><strong>Remove Ads:</strong> the optional one-time purchase removes in-game ads and makes the one shared recovery per run ad-free: choose Continue, or Rewind when eligible. Restore Purchases checks the Apple Account entitlement. The price shown by the App Store is localized for your storefront.</li>
-        <li><strong>Game Center:</strong> signing in and using the leaderboard is your choice. Apple controls Game Center identity, visibility, and records.</li>
-        <li><strong>Local game data:</strong> deleting the app removes its local settings, history, Run codes, progression, and checkpoint. Offloading the app keeps its documents and data for a later reinstall.</li>
+        <li><strong>Remove Ads:</strong> the optional one-time purchase removes in-game ads and makes the one shared recovery per run ad-free: choose Continue, or Rewind when eligible. On iPhone, Restore Purchases checks the Apple Account entitlement; on Android, it queries the current Google Play account through Google Play Billing. The price shown by the App Store or Google Play is localized for your storefront.</li>
+        <li><strong>Game Center (iPhone):</strong> signing in and using the leaderboard is your choice. Apple controls Game Center identity, visibility, and records.</li>
+        <li><strong>Google Play Games (Android):</strong> signing in and using the leaderboard is your choice. Google controls Play Games identity, visibility, and records.</li>
+        <li><strong>Local game data:</strong> deleting the app removes its local settings, history, Run codes, progression, and checkpoint. On iPhone, Offload App keeps its documents and data for a later reinstall; Android’s uninstall or archive behavior is controlled by Android and may differ.</li>
       </ul>
-      <p class="callout">AFTERARC has no separate player account or cloud-save service. Optional analytics, crash, and advertising services can use app-instance, installation, or device identifiers. AFTERARC does not attach your name or email to those events, but providers can use these identifiers to distinguish an app installation or device.</p>
+      <p class="callout">AFTERARC has no separate player account or cloud-save service. Optional Game Center or Google Play Games sign-in is provided by the platform. Optional analytics, crash, and advertising services can use app-instance, installation, or device identifiers. AFTERARC does not attach your name or email to those events, but providers can use these identifiers to distinguish an app installation or device.</p>
     </section>
 
     <section>
       <h2>Third-party services</h2>
-      <p>The iOS app can use services operated by Google and Apple. They process information under their own notices and terms:</p>
+      <p>The iPhone and Android apps can use services operated by Google and Apple. They process information under their own notices and terms:</p>
       <ul>
         <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from apps that use its services</a></li>
         <li><a href="https://developers.google.com/admob/ios/privacy/data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK privacy and data disclosure</a></li>
+        <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK Android privacy and data disclosure</a></li>
         <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy and security in Firebase</a></li>
         <li><a href="https://www.apple.com/legal/privacy/data/en/game-center/" target="_blank" rel="noopener noreferrer">Apple Game Center &amp; Privacy</a></li>
+        <li><a href="https://support.google.com/googleplay/answer/3129346" target="_blank" rel="noopener noreferrer">Google Play Games privacy</a></li>
       </ul>
       <h3>This website</h3>
       <p>These pages are hosted with GitHub Pages. GitHub may process request, IP-address, browser/device, and security log information to deliver and protect the site, as explained in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub General Privacy Statement</a>. These pages do not load our own analytics scripts or third-party web fonts.</p>
@@ -70,13 +75,13 @@
 
     <section>
       <h2>Retention and security</h2>
-      <p>Local game data remains on your device until the app clears it or you delete the app. Support messages are kept only as long as reasonably needed to answer the request, protect the service, or meet legal obligations. Google and Apple set retention periods for information processed by their services.</p>
+      <p>Local game data remains on your device until the app clears it or you delete the app. Support messages are kept only as long as reasonably needed to answer the request, protect the service, or meet legal obligations. Google and Apple set retention periods for information processed by their services, including Google Play Billing and Google Play Games on Android.</p>
       <p>We use reasonable technical and organizational safeguards, but no storage or transmission method is completely secure.</p>
     </section>
 
     <section>
       <h2>Children</h2>
-      <p>The game is not designed to collect a child’s name, contact details, or precise location. If a child sends personal information through support, a parent or guardian can email us so we can review and delete it where applicable.</p>
+      <p>The game is not designed to collect a child’s name, contact details, or precise location. If a child chooses Game Center or Google Play Games, the platform may process profile information under its own notice. If a child sends personal information through support, a parent or guardian can email us so we can review and delete it where applicable.</p>
     </section>
 
     <section>
