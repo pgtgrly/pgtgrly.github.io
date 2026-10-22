@@ -182,3 +182,12 @@ section:not(.hero) { padding-block: var(--space-section); }
     .cta-button { transition: none; }
     .cta-button:hover { transform: none; }
 }
+
+.legal-content .date { margin-top: -1.25rem; color: var(--muted-color); font-size: .975rem; }
+.legal-content .card { margin-block: 2rem; padding: 1.25rem 1.5rem; border: 1px solid var(--line-color); border-radius: 8px; background: var(--surface-color); }
+.legal-content .card h2 { margin-top: 0; }
+.legal-content .contents { margin-bottom: 2rem; color: var(--muted-color); }
+.legal-content h3 { margin: 2rem 0 .75rem; font-size: 1.25rem; }
+.legal-content details { padding-block: .75rem; border-top: 1px solid var(--line-color); }
+.legal-content summary { display: flex; align-items: center; min-height: 44px; font-weight: 600; cursor: pointer; }
+.legal-content details p { margin-top: .75rem; color: var(--muted-color); }
