@@ -1,0 +1,15 @@
+{% if site.google_analytics %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  // Ad-report diagnostic fields are not page identity.
+  const pageLocation = `${window.location.origin}${window.location.pathname}${window.location.hash}`;
+  gtag('config', '{{ site.google_analytics }}', {
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false,
+    page_location: pageLocation
+  });
+</script>
+{% endif %}
