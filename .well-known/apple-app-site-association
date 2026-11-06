@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["6P4D4MU4VF.damagedcronjob.magnetmob", "6P4D4MU4VF.damagedcronjob.magnetmob.dev"],
+        "components": [
+          { "/": "/magnetmob/open/*", "comment": "Store pages and events open the game at a place." }
+        ]
+      }
+    ]
+  }
+}

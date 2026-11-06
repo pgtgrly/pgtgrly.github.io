@@ -27,3 +27,7 @@ permalink: pretty
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Apple and Google read these from the dot folder, which Jekyll skips by default.
+include:
+  - .well-known
