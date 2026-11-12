@@ -1,0 +1,19 @@
+# Pranav Garg: apps and games
+
+> Independent developer of the iPhone and Android apps Drizzl, AFTERARC, Lexora and the game Magnet Mob. Each app has an official page with facts, a guide and support.
+
+## Magnet Mob: Crowd Army Runner
+
+Magnet Mob is a crowd runner game for iPhone where you grow an army at number gates and use a magnet to pull enemies in and push them back. Free with ads and optional in-app purchases. Rated 13+. Single player, portrait, one finger. 19 languages. Android later.
+
+- [Magnet Mob official page](https://pranavgarg.in/magnetmob/): what the game is, how to play, questions and answers
+- [How to beat archer towers and bosses](https://pranavgarg.in/magnetmob/guides/archer-towers-and-bosses/): the developer's guide to towers, Repel and each boss's weak moment
+- [Magnet Mob press kit](https://pranavgarg.in/magnetmob/press/): fact sheet, screenshots, key art and icon
+- [Magnet Mob support](https://pranavgarg.in/magnetmob/support/): purchases, restore, data and contact
+- [Magnet Mob privacy policy](https://pranavgarg.in/magnetmob/privacy/)
+
+## Optional
+
+- [Drizzl](https://pranavgarg.in/drizzl/)
+- [AFTERARC](https://pranavgarg.in/afterarc/)
+- [Lexora](https://pranavgarg.in/lexora/)
