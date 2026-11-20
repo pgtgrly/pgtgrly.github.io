@@ -3,3 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 Gemfile.lock
+
+# impeccable working files
+.impeccable/review/
+.impeccable/hook.cache.json
+.impeccable/questions/
+.impeccable/mocks/

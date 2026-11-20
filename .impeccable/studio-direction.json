@@ -1,0 +1,249 @@
+{
+ "title": "damagedCronJob Studios page: choose the visual world",
+ "question": "The roll dealt the toy aisle. Keep it, take the level-select map, or re-roll.",
+ "options": [
+  {
+   "id": "assigned",
+   "kind": "assigned",
+   "label": "The Toy Aisle Pegboard",
+   "kicker": "THE ROLL",
+   "lineage": "blister-packed toys hanging on a shop's pegboard wall",
+   "thesis": "Every title hangs on the studio's pegboard like a toy in its blister pack: pick one off the wall.",
+   "palette": [
+    "#B98A5E",
+    "#FF5A1F",
+    "#2346C8",
+    "#FFD23F",
+    "#F7F3EA"
+   ],
+   "materials": [
+    "perforated hardboard",
+    "die-cut printed card",
+    "clear vacuum-formed blister",
+    "starburst price stickers"
+   ],
+   "viewport": "A warm pegboard wall fills the screen: the studio's header card hangs top left, four packs hang on pegs, Magnet Mob's the biggest with its App Store button printed on the card.",
+   "risk": "Becomes a toy-shop costume if the packs are flat rectangles; the blister, hang tab and printing must be crafted, and press facts must stay readable.",
+   "raised": [
+    {
+     "from": "challenger-gravity",
+     "raise": "Packs hang on real pegs with pendulum physics: they swing when the pointer brushes them and settle."
+    },
+    {
+     "from": "challenger-ascii",
+     "raise": "The pegboard's hole pitch is the page's only grid; every pack, label and gap snaps to it, phones included."
+    },
+    {
+     "from": "challenger-futurist",
+     "raise": "One shout per card: each title set big and angled like toy-box lettering, loudness ranked by what the card sells."
+    },
+    {
+     "from": "challenger-matchbook",
+     "raise": "Every card is its own composition, and a tap flips it once, completely, to a printed back with the facts and links."
+    },
+    {
+     "from": "challenger-skin",
+     "raise": "Status (Out now, Android soon) is printed on the card as stickers, never as UI badges."
+    },
+    {
+     "from": "challenger-nixie",
+     "raise": "Only real facts sit in fixed positions: platform and release date on each pack's price-tag strip."
+    }
+   ],
+   "html": "/Users/anshikaagarwal/Desktop/Projects/pgtgrly.github.io/.impeccable/mocks/decision/toy-aisle.html"
+  },
+  {
+   "id": "model-pick",
+   "kind": "pick",
+   "label": "Level Select",
+   "kicker": "IMPECCABLE\u2019S PICK",
+   "lineage": "the overworld map of a platform game",
+   "thesis": "The studio as a game's level-select map: each title is a world on one winding path.",
+   "palette": [
+    "#5DBB4A",
+    "#E9C98A",
+    "#3BA7E0",
+    "#FFC93C",
+    "#1B1B2F"
+   ],
+   "materials": [
+    "illustrated overworld",
+    "dotted path",
+    "node badges",
+    "pixel cursor"
+   ],
+   "viewport": "A bright overworld fills the screen; the path runs from the studio's start flag through four title worlds, Magnet Mob's node marked NEW with its Play button.",
+   "risk": "The most familiar game-studio trope after a card grid; it needs real illustration craft or it reads as clip art.",
+   "html": "/Users/anshikaagarwal/Desktop/Projects/pgtgrly.github.io/.impeccable/mocks/decision/level-select.html"
+  },
+  {
+   "id": "challenger-ascii",
+   "kind": "challenger",
+   "catalogId": "medium-native-ascii-live-scene-render",
+   "label": "ASCII Live Scene",
+   "verdict": "declined",
+   "lineage": "typewriter and terminal glyph art",
+   "thesis": "Each title rendered live in monospace glyphs, density standing in for light.",
+   "palette": [
+    "#0B0F0B",
+    "#7CFF6B",
+    "#FFB000"
+   ],
+   "materials": [
+    "phosphor glyph grid",
+    "luminance ramp"
+   ],
+   "viewport": "Magnet Mob's army running in glyphs across a phosphor grid, the studio name typed above.",
+   "case": "Fits the programmer joke but hides the games behind text, and it is the cron and terminal rut the owner rejected.",
+   "kept": "One strict grid as the whole composition.",
+   "risk": "Reads as a terminal costume; players can't see the games.",
+   "hero": "https://impeccable.style/worlds/cards/medium-native-ascii-live-scene-render-hero.webp"
+  },
+  {
+   "id": "challenger-matchbook",
+   "kind": "challenger",
+   "catalogId": "vernacular-ephemera-matchbook-drawer",
+   "label": "Matchbook Drawer",
+   "verdict": "declined",
+   "lineage": "hotel and club matchbooks",
+   "thesis": "Each title as a collected matchbook cover that flips open for details.",
+   "palette": [
+    "#5A1A1A",
+    "#1E4D3A",
+    "#111111",
+    "#D4AF37"
+   ],
+   "materials": [
+    "foil script",
+    "striker strip",
+    "card stock"
+   ],
+   "viewport": "A drawer of four covers fanned in the hand, Magnet Mob's on top.",
+   "case": "A collectible object world, but nightlife ephemera doesn't say games; the toys do.",
+   "kept": "One cover, one composition; single complete flips.",
+   "risk": "Nostalgic mood with no play in it.",
+   "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-matchbook-drawer-hero.webp"
+  },
+  {
+   "id": "challenger-futurist",
+   "kind": "challenger",
+   "catalogId": "design-canon-futurist-bolted-book",
+   "label": "Futurist Bolted Book",
+   "verdict": "declined",
+   "lineage": "1920s futurist bolted books",
+   "thesis": "The studio as a loud bolted book, each title a slamming spread.",
+   "palette": [
+    "#F1E8D6",
+    "#111111",
+    "#C8262B"
+   ],
+   "materials": [
+    "wood type",
+    "aluminium bolts"
+   ],
+   "viewport": "A spread with DAMAGED CRON JOB slammed diagonally across it.",
+   "case": "Loud and bold but avant-garde print, far from a player's world.",
+   "kept": "Type scaled by loudness.",
+   "risk": "Art-school poster; the games disappear.",
+   "hero": "https://impeccable.style/worlds/cards/design-canon-futurist-bolted-book-hero.webp"
+  },
+  {
+   "id": "challenger-gravity",
+   "kind": "challenger",
+   "catalogId": "dream-surreal-impossible-worlds-gravity-rain-garden",
+   "label": "Gravity Rain Garden",
+   "verdict": "declined",
+   "lineage": "surreal impossible gardens",
+   "thesis": "Titles as objects in a garden where coloured rains fall by their own gravity.",
+   "palette": [
+    "#5E6B60",
+    "#2F6FD6",
+    "#D64B3A",
+    "#111111"
+   ],
+   "materials": [
+    "vector rain field",
+    "floating objects"
+   ],
+   "viewport": "A dusk garden with four title objects caught in different rains.",
+   "case": "A beautiful toy, but neither players nor press would recognise a studio in it.",
+   "kept": "A real physical law governing interaction.",
+   "risk": "A demo, not a studio page.",
+   "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-gravity-rain-garden-hero.webp"
+  },
+  {
+   "id": "challenger-skin",
+   "kind": "challenger",
+   "catalogId": "reefs-bioluminescent-nocturnal-chromatophore-skin-language",
+   "label": "Chromatophore Skin",
+   "verdict": "declined",
+   "lineage": "cephalopod skin as a living display",
+   "thesis": "The page as living skin whose patterns signal each title.",
+   "palette": [
+    "#EFE3D3",
+    "#8B3A2B",
+    "#2FB7A5"
+   ],
+   "materials": [
+    "pigment cells",
+    "traveling patterns"
+   ],
+   "viewport": "A pale skin field rippling into four title patterns.",
+   "case": "No link to games or to the studio's name.",
+   "kept": "State drawn onto the surface itself.",
+   "risk": "Abstract; nobody finds the games.",
+   "hero": "https://impeccable.style/worlds/cards/reefs-bioluminescent-nocturnal-chromatophore-skin-language-hero.webp"
+  },
+  {
+   "id": "challenger-nixie",
+   "kind": "challenger",
+   "catalogId": "signals-instruments-nixie-laboratory-counter",
+   "label": "Nixie Counter",
+   "verdict": "declined",
+   "lineage": "nixie-tube laboratory counters",
+   "thesis": "Studio facts glowing in nixie tubes.",
+   "palette": [
+    "#1A1A1A",
+    "#FF7A1A",
+    "#8A8F96"
+   ],
+   "materials": [
+    "glass tubes",
+    "steel chassis"
+   ],
+   "viewport": "A bank of tubes counting up the studio's titles.",
+   "case": "The page has almost no real numbers to show, and claims are off the table.",
+   "kept": "Only real numbers move.",
+   "risk": "An instrument costume with nothing to count.",
+   "hero": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter-hero.webp"
+  }
+ ],
+ "reroll": {
+  "registers": [
+   "safer",
+   "bolder"
+  ]
+ },
+ "buildPath": {
+  "value": "code"
+ },
+ "canon": true,
+ "canonCard": {
+  "kind": "canon",
+  "label": "The category standard",
+  "thesis": "A dark hero with the studio logo over a grid of game key-art cards, then about and contact.",
+  "palette": [
+   "#0E0E12",
+   "#FFFFFF",
+   "#FF5A1F"
+  ],
+  "materials": [
+   "key art",
+   "clean grid"
+  ],
+  "viewport": "Logo and one line up top, four game cards below, each with a store button.",
+  "risk": "Indistinguishable from every studio site by design.",
+  "html": "/Users/anshikaagarwal/Desktop/Projects/pgtgrly.github.io/.impeccable/mocks/decision/canon.html"
+ },
+ "steer": true
+}

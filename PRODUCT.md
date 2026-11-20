@@ -38,8 +38,8 @@ The page makes no further public promises; the owner declined fair-play, no-acco
   - **AFTERARC: Ricochet**: App Store id6811348292.
   - **Lexora - SAT Prep**: App Store id6756804938.
 - **Naming.** On the App Store the seller is Pranav Garg. On Google Play the developer name is DamagedCronJob.
-- **Presenting the studio.** It is an indie studio by Pranav Garg; the studio name leads and his name appears openly (owner, 20 Nov 2026).
-- **Social accounts** (Instagram, YouTube, TikTok) are being renamed to damagedCronJob Studios; the handles are not settled.
+- **Presenting the studio.** The studio name stands alone; the owner's personal name does not appear on the studio page or the studio's social bios (owner, 21 Nov 2026). The studio line is "Tiny games, big chaos.", matching the bios.
+- **Social accounts** (Instagram, YouTube, TikTok) are being renamed to damagedCronJob Studios; handles @damagedcronjob (Instagram, TikTok) and @DamagedCronJob (YouTube).
 - **Static only.** No server, no build tooling beyond GitHub Pages' Jekyll.
 
 ## Brand Commitments
