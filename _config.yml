@@ -31,3 +31,12 @@ plugins:
 # Apple and Google read these from the dot folder, which Jekyll skips by default.
 include:
   - .well-known
+
+# Design records for the site's own tools; not pages. Listing Jekyll's usual excludes too, in case this list replaces them.
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
